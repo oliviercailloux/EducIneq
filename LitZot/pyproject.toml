@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+requires-python = ">=3.7"
+name = "litzot"
+version = "0.0.1"
+dependencies = ["pyzotero", "pandas", "bibtexparser==1.4.1"]
+
+[project.scripts]
+pyzot = "litzot.main:main"
+
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"

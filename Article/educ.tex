@@ -1,14 +1,45 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+\RequirePackage[l2tabu, orthodox]{nag}
+\documentclass[pagesize, twoside=off, bibliography=totoc, DIV=calc, fontsize=12pt, a4paper, french]{scrartcl}
+\input{preamble/packages}
+\input{preamble/redac}
 
 \title{Éducation et inégalités en Amérique Latine}
 \author{Olivier Cailloux}
-\date{November 2024}
+\author{Ouissem Chikh}
+\author{Morgane Le Plomb}
+\affil{Université Paris-Dauphine, PSL Research University, CNRS, LAMSADE, 75016 PARIS, FRANCE}
+\hypersetup{
+	pdfsubject={},
+	pdfkeywords={},
+}
 
 \begin{document}
-
 \maketitle
 
-\section{Introduction}
+\section{Motivation}
+\label{sec:motiv}
+L’éducation, c’est cool.
+Les inégalités, c’est bof.
+L’Amérique latine, c’est dynamique.
+Voyons comment ou si l’un a un impact sur l’autre en Amérique latine.
+
+\section{Sources}
+Nous avons choisi de nous appuyer sur la base de données de EBSCOhost \emph{EconLIT with Full Text} qui semble présenter un bon compromis entre sa couverture large (nombreuses sources en économie) et sa spécialisation (réduisant les risques de trop nombreux résultats non pertinents). En outre, elle permet une recherche par mots clés avancée.
+Voici comment l’éditeur la décrit \citep{ebscohost_econlit_2024}.
+
+“EconLit, the American Economic Association's electronic database, is the world's foremost source of references to economic literature. EconLit adheres to the high quality standards long recognized by subscribers to the Journal of Economic Literature (JEL) and is a reliable source of citations and abstracts to economic research dating back to 1886. It provides links to full-text articles in all fields of economics, including capital markets, country studies, econometrics, economic forecasting, environmental economics, government regulations, labor economics, monetary theory, urban economics, and much more. EconLit uses the JEL classification system and controlled vocabulary of keywords to index six types of records: journal articles, books, collective volume articles, dissertations, working papers, and full-text book reviews from the Journal of Economic Literature. These sources bring the total records available in the database to more than 1.2 million.
+
+EconLit with Full Text contains all of the indexing available in EconLit, plus full text for nearly 600 journals, including the American Economic Association journals with no embargo (American Economic Review, Journal of Economic Literature, Journal of Economic Perspectives, and the four American Economic Journal titles). This database also contains many non-English full-text journals in economics and finance. Volume and issue browsing is available for all full-text journals.”
+
+\section{Couverture et mots-clés cherchés}
+Notre recherche s’intéresse aux articles couvrant quatre éléments, appelés ici \og{}sujets\fg{} : l’éducation, les inégalités, la liaison entre ces deux éléments, et l’Amérique latine. La liaison représente le lien de cause à effet, la corrélation, ou autres relations liant ces deux éléments. Pour chacun de ces quatre éléments, nous réunissons des synonymes ou des termes pertinents, y compris des variations de suffixes. Voici les termes retenus.
+
+\begin{description}
+  \item[Éducation] Le mot clé retenu est \emph{education}, qui ne semble pas admettre de synonymes ou variantes pertinents pour notre contexte.
+  \item[Inégalités] Nous avons retenus les mots clés \emph{equality}, \emph{inequality}, \emph{egalitar*} (couvrant egalitarian, egalitarianism, …) et \emph{inegalitar*}. Notons que le moteur de EBSChost permet d’après sa documentation \citep{ebscohost_searching_2024} d’utiliser \#\#equality pour couvrir \emph{equality} et \emph{inequality}, mais nous avons constaté de nombreux bugs dans cet usage.
+  \item[Amérique latine] Nous avons utilisé \emph{Latin America*}, qui couvre \emph{Latin America} et \emph{Latin American} (apparaissant par exemple dans \emph{Latin American Journal of Economics}). 
+\end{description}
+
+\bibliography{zotero}
 
 \end{document}
