@@ -1,0 +1,230 @@
+= Litt
+Inégalités sur éduc, mentionner la causalité inverse (ou l’inverse).
+Am Lat en regardant les diffs entre les pays.
+Analyse micro, pas macro.
+
+"Latin America" inequality education
+Inconv ça considère également les études sur l’inégalité de l’éducation
+
+44 R means 44 counting only Source Types Academic Journals and CVA
+
+"Latin America" AND inequality N5 (caus* OR influence* OR relation*) N5 education
+RV 1
+AB OR TI OR KW
+Journal Title
+Subjects (All)
+
+CC I24 AND PT "Journal Article" 1810
+CC I24 AND PT "Collective Volume Article" 293
+CC I24 AND (PT "Journal Article" OR PT "Collective Volume Article") 2103
+
+KW equality 1566
+KW inequality 22k
+KW equality NOT KW inequality 1041
+
+ZJ "Latin America" 1 (book Latin America, Gilbert, Alan, general)
+JN "Latin America" 1 (same book)
+JN "Latin American" 0 (does not find Latin American Journal of Economics)
+SO "Latin American" 3273
+SO "Latin America*" 7317
+JN inequality 0
+ZJ inequality 0
+JN caus* 0
+ZJ caus* 0
+JN influence* 2
+ZJ influence* 2
+JN education 0
+ZJ education 0
+
+ZU "Latin America" NOT KW "Latin America" 9841
+ZU inequality 0
+ZU equality 0
+ZU caus* 0
+ZU influence* 0
+ZU education 0
+
+AB "Latin America" 6912
+AB inequality 44k
+AB inequal* 44k
+AB i#equality 38k
+AB (caus* OR influence* OR relation*) 315,280
+AB education 52,593
+
+KW "Latin America" NOT AB "Latin America" 547
+
+TX (inequality N5 (caus* OR influence* OR relation*) N5 education) 444
+TX (inequality N5 (caus* OR influence* OR relation*) N5 education AND IHDI) 1 but not about Latin America
+
+A few days later.
+TX (inequality N5 (caus* OR influence* OR relation*) N5 education) 458 among which indicated 399 Academic Journals
+TX (inequality N5 (caus* OR influence* OR relation*) N5 education) AND PT "Journal Article" 61
+TX (inequality N5 (caus* OR influence* OR relation*) N5 education) NOT PT "Journal Article" 
+  Including The Journal of Development Studies https://www-tandfonline-com.proxy.bu.dauphine.fr/doi/full/10.1080/00220388.2019.1690133
+TX (inequality N5 (caus* OR influence* OR relation*) N5 education) AND RV 0 119
+  Including https://www-sciencedirect-com.proxy.bu.dauphine.fr/science/article/pii/S0014292107001456?via%3Dihub
+TX (inequality N5 (caus* OR influence* OR relation*) N5 education) AND RV 1 339
+TX (inequality N5 (caus* OR influence* OR relation*) N5 education) AND (PT "Journal Article" OR PT "Collective Volume Article") 61
+
+AB (inequality N5 (caus* OR influence* OR relation*) N5 education) AND RV 1 16
+AB (inequality N5 education) AND RV 1 264
+
+Descriptors/Descriptor Codes	Subject terms derived from the Journal of Economic Literature (JEL) thesaurus used in indexing, followed by the related Descriptor Classification Code. [Go to Descriptor Classification Code List]
+Keywords	Additional indexing terms assigned, but not drawn from the (JEL) thesaurus.
+DE	Descriptors
+CC	Descriptors/Descriptor Codes
+https://www.aeaweb.org/econlit/jelCodes.php?view=
+Codes containing "equality"
+I24 	Education and Inequality 
+D63 	Equity, Justice, Inequality, and Other Normative Criteria and Measurement
+I14 	Health and Inequality
+
+CC I24 AND TX "Latin America" 228
+
+CC I24 NOT TX (inequality AND education) 0
+CC I24 NOT AB (inequality AND education) 2516
+TX (inequality AND education) NOT CC I24 64404
+TX (inequality AND education) AND RV 1 NOT CC I24 50k
+
+CC I24 AND TX "Latin America" NOT (TX (inequality N5 (caus* OR influence* OR relation*) N5 education) AND RV 1) 228
+CC I24 AND TX "Latin America" NOT (TX (inequality N5 (caus* OR influence* OR relation*) N5 education)) 226
+CC I24 AND TX "Latin America" NOT (TX (inequality N5 (caus* OR influence* OR relation*))) 215
+CC I24 AND TX "Latin America" NOT (TX inequality AND RV 1) 228
+CC I24 AND TX "Latin America" NOT (TX inequality) 0
+
+(TX (inequality N5 (caus* OR influence* OR relation*) N5 education)) AND RV 1 NOT CC I24 339
+(TX (inequality N5 (caus* OR influence* OR relation*) N5 education)) NOT CC I24 432
+(TX (inequality N5 (caus* OR influence* OR relation*) N5 education)) AND CC I24 26
+((TX (inequality N5 (caus* OR influence* OR relation*) N5 education)) AND RV 1) NOT (CC I24) 339
+(CC I24) NOT ((TX (inequality N5 (caus* OR influence* OR relation*) N5 education)) AND RV 1) 3040
+
+CC I24 AND TX (caus* OR influence* OR relation*) 813
+CC I24 AND AB (caus* OR influence* OR relation*) 755
+
+TX (inequality N5 (caus* OR influence* OR relation*) N5 education) AND TX "Latin America" AND RV 1 100
+  Example: COULD AN INCREASE IN EDUCATION RAISE INCOME INEQUALITY? EVIDENCE FOR LATIN AMERICA.
+
+AB (inequality N5 (caus* OR influence* OR relation*) N5 education) 104
+TI (inequality N5 (caus* OR influence* OR relation*) N5 education) 6
+TI (inequality N5 (caus* OR influence* OR relation*) N5 education) NOT AB (inequality N5 (caus* OR influence* OR relation*) N5 education) 6
+TI (inequality N5 (caus* OR influence* OR relation*) N5 education) OR AB (inequality N5 (caus* OR influence* OR relation*) N5 education) 110
+KW (inequality AND (caus* OR influence* OR relation*) AND education) 2
+CC I24 AND KW (caus* OR influence* OR relation*) 3
+CC I24 AND AB (caus* OR influence* OR relation*) 755
+CC I24 AND TI (caus* OR influence* OR relation*) 44 R
+SO (caus* OR influence* OR relation*) 21k
+SO (caus* OR influence* OR relation*) AND RV 1 1k
+SO inequality AND TI ((caus* OR influence* OR relation*) N5 education) 2 (unrelated to LA)
+SO education AND TI ((caus* OR influence* OR relation*) N5 inequality) 4 (unrelated to LA)
+SO inequality AND AB ((caus* OR influence* OR relation*) N5 education) 29 but only 2 from academic journals, one of which about LA
+SO education AND AB ((caus* OR influence* OR relation*) N5 inequality) 46, among which 10 from academic journals
+
+== All topics, not necessarily related
+Our four topics are there, each in SO, KW, TI or AB
+((TI (equality OR inequality OR egalitar* OR inegalitar*) OR SO (equality OR inequality OR egalitar* OR inegalitar*) OR KW (equality OR inequality OR egalitar* OR inegalitar*) OR AB (equality OR inequality OR egalitar* OR inegalitar*)) AND (TI education OR SO education OR KW education OR AB education) OR CC I24) AND (TI (caus* OR influence* OR relation* OR correlation*) OR SO (caus* OR influence* OR relation* OR correlation*) OR KW (caus* OR influence* OR relation* OR correlation*) OR AB (caus* OR influence* OR relation* OR correlation*)) AND (TI "Latin America*" OR SO "Latin America*" OR KW "Latin America*" OR AB "Latin America*") 42 R
+
+== Three topics, not necessarily related
+((TI (equality OR inequality OR egalitar* OR inegalitar*) OR SO (equality OR inequality OR egalitar* OR inegalitar*) OR KW (equality OR inequality OR egalitar* OR inegalitar*) OR AB (equality OR inequality OR egalitar* OR inegalitar*)) AND (TI education OR SO education OR KW education OR AB education) OR CC I24) AND (TI "Latin America*" OR SO "Latin America*" OR KW "Latin America*" OR AB "Latin America*") 156 R
+
+== Three topics, related
+eq
+educ
+LA
+
+. TI (inequality N5 (caus* OR influence* OR relation*) N5 education)
+. AB (inequality N5 (caus* OR influence* OR relation*) N5 education)
+. KW (inequality AND (caus* OR influence* OR relation*) AND education)
+. CC I24 AND AB (caus* OR influence* OR relation*) (arguable)
+. CC I24 AND KW (caus* OR influence* OR relation*)
+. CC I24 AND TI (caus* OR influence* OR relation*) (arguable)
+. CC I24 AND SO (caus* OR influence* OR relation*)
+
+Each can be in source, kw, ti, ab
+
+Rel dans AB
+  inesq dans AB
+    educ dans TI
+      rel near ineq but not near education & education in title: Education in LA. Abstract: we also investigation its relationship with inequality.
+      VS education in abstract but not near rel near ineq. Too broad.
+    educ dans SO
+      same
+    educ in KW
+    educ near rel dans AB
+Rel dans AB
+  ineq and educ in KW
+    No, we want rel near something? Arguable.
+  ineq and educ in SO
+    Yes!
+
+So we want relation in relation with some other but can be in the context (so, kw, ti)
+What about relation in context and the others in kw or others? Rel in So, kw or ti and educ in AB and ineq in AB?
+  AB education AND AB inequality AND SO (caus* OR influence* OR relation*)
+So we just exclude all three in AB (because then no relation betwen them), all other combinations are permitted
+Or we could even try with all three in AB (1k R)
+
+== Decisions
+Narrow: search for relation in LA
+CC I24 AND TX (caus* OR influence* OR relation*)
+
+Average: search for relation or correlation in LA
+relation reviews in the world
+
+Global: search for education and inequality in LA
+
+== Qs
+In Database Field Tag Complete List, there is PR, but not in the doc (Econ Lit)
+Reach direct
+CC I24 3040
+  Including: https://www-aeaweb-org.proxy.bu.dauphine.fr/articles?id=10.1257/aer.20191184 Revealing Stereotypes: Evidence from Immigrants in Schools
+CC I24 AND RV 1 0 (same with checking the Peer Reviewed box)
+CC I24 AND RV 0 3040
+  TI (Revealing AND Stereotypes AND Evidence AND Immigrants) AND RV 1 finds it
+Similar problem with the SO field.
+AB inequality 44k
+AB inequal* 44k
+AB i#equality 38k
+Multiple fields
+
+
+== Source
+EconLIT with Full Text
+https://support-ebsco-com.proxy.bu.dauphine.fr/help/?int=ehost&lang=en&feature_id=Databases&TOC_ID=Always&SI=0&BU=0&GU=1&PS=0&ver=live&dbs=eohjnh,eoh
+- focused db but on-topic
+- spans multiple editors
+- permits advanced keywords search
+
+== Tests
+web N5 accessibility, which means “web” and “accessibility” separated by five words or less, in any order
+web AND accessibility.
+web OR accessibility
+AU (Smith AND Peters NOT Lee)
+
+Pub type collective volume article, journal article, book
+or rather: peer reviewed
+
+https://support.ebsco.com/help/?int=ehost&lang=en&feature_id=&TOC_ID=Always&SI=0&BU=0&GU=1&PS=0&ver=&dbs=eoh
+
+Proximity searching is a way to search for two or more words that occur within a certain number of words from each other. The proximity operators are composed of a letter (N or W) and a number (to specify the number of words). The number cannot exceed 255.
+
+The proximity operator is placed between the words that are to be searched, as follows:
+
+    Near Operator (N): N5 finds the words if they are a maximum of five words apart from one another, regardless of the order in which they appear. For example, type tax N5 reform to find results that have a maximum of five words between the beginning and ending terms, that would match tax reform as well as tax that has been submitted for reform.
+
+    Within Operator (W): W8 finds the words if they are within eight words of one another, in the order in which you entered them. For example, type tax W8 reform to find results that would match tax reform but would not match reform of income tax.
+
+Multiple proximity operators can be used in a search expression and multiple terms can be used on either side of each proximity operator. See the following examples:
+
+    tax N5 reform OR tariff N5 reform
+    (tax OR tariff) N5 reform
+    oil W3 (disaster OR clean-up OR contamination) N5 (fisheries OR habitats)
+    (baseball OR football OR basketball) N5 (teams OR players) N5 (greatest OR best)
+
+https://web-p-ebscohost-com.proxy.bu.dauphine.fr/ehost/results?vid=5&sid=1c83ce39-6499-4a61-b42c-5cb775c986f7%40redis&bquery=(baseball+OR+football+OR+basketball)+N5+(teams+OR+players)+N5+(greatest+OR+best)&bdata=JmRiPWVvaCZ0eXBlPTAmc2VhcmNoTW9kZT1BbmQmc2l0ZT1laG9zdC1saXZlJnNjb3BlPXNpdGU%3d OK mais pendant session
+https://web-p-ebscohost-com.proxy.bu.dauphine.fr/ehost/results?bquery=(baseball+OR+football+OR+basketball)+N5+(teams+OR+players)+N5+(greatest+OR+best) A system problem
+https://web-p-ebscohost-com.proxy.bu.dauphine.fr/ehost/results?sid=%40redis select resource
+
+AB ((baseball OR football OR basketball) N5 (teams OR players) N5 (greatest OR best))
+returns 7 articles, first one correct match.
+
+http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=prh
+https://search-ebsco-com.proxy.bu.dauphine.fr/login.aspx?authtype=ip,uid&profile=prh 404
+https://connect.ebsco.com/s/article/Using-the-EBSCO-Direct-URL-Builder-Tool

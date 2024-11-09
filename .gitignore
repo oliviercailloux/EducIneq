@@ -1,0 +1,11 @@
+Article/.olauth
+Article/*.aux
+Article/*.bbl
+Article/*.blg
+Article/*.fdb_latexmk
+Article/*.fls
+Article/*.log
+Article/*.synctex.gz
+Article/*.thm
+Article/*.pdf
+
