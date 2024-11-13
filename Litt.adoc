@@ -200,6 +200,7 @@ AB inequal* 44k
 AB i#equality 38k
 Multiple fields
 
+https://connect.ebsco.com/s/article/Exporting-up-to-25-000-Results?language=en_US
 
 == Source
 EconLIT with Full Text
