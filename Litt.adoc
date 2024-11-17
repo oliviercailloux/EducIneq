@@ -118,6 +118,9 @@ SO education AND TI ((caus* OR influence* OR relation*) N5 inequality) 4 (unrela
 SO inequality AND AB ((caus* OR influence* OR relation*) N5 education) 29 but only 2 from academic journals, one of which about LA
 SO education AND AB ((caus* OR influence* OR relation*) N5 inequality) 46, among which 10 from academic journals
 
+== À voir
+inequality in education cruces, chapitre de livre, pas trouvé dans ma recherche mais est dans EBSCHO
+
 == Direct
 https://proxy.bu.dauphine.fr/login?url=https://search.ebscohost.com/login.aspx?direct=true&db=eoh&bquery=(((TI+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+SO+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+KW+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+AB+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*))+AND+(TI+education+OR+SO+education+OR+KW+education+OR+AB+education))+OR+CC+I24)+AND+(TI+%26quot%3bLatin+America*%26quot%3b+OR+SO+%26quot%3bLatin+America*%26quot%3b+OR+KW+%26quot%3bLatin+America*%26quot%3b+OR+AB+%26quot%3bLatin+America*%26quot%3b)&type=0&searchMode=And&site=ehost-live&scope=site WORKS but not any more
 https://search-ebscohost-com.proxy.bu.dauphine.fr/login.aspx?direct=true&db=eoh&bquery=equality&type=0&searchMode=And&site=ehost-live&scope=site WORKS
