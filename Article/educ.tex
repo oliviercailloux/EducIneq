@@ -16,13 +16,14 @@
 \begin{document}
 \maketitle
 
-\section{Motivation}
+\section{Introduction}
 \label{sec:motiv}
 L’éducation, c’est cool.
 Les inégalités, c’est bof.
 L’Amérique latine, c’est dynamique.
 Voyons comment ou si l’un a un impact sur l’autre en Amérique latine.
 
+\appendix
 \section{Sources}
 Nous avons choisi de nous appuyer sur la base de données de EBSCOhost \emph{EconLIT with Full Text} qui semble présenter un bon compromis entre sa couverture large (nombreuses sources en économie) et sa spécialisation (réduisant les risques de trop nombreux résultats non pertinents). En outre, elle permet une recherche par mots clés avancée.
 Voici comment l’éditeur la décrit \citep{ebscohost_econlit_2024}.
@@ -32,27 +33,32 @@ Voici comment l’éditeur la décrit \citep{ebscohost_econlit_2024}.
 EconLit with Full Text contains all of the indexing available in EconLit, plus full text for nearly 600 journals, including the American Economic Association journals with no embargo (American Economic Review, Journal of Economic Literature, Journal of Economic Perspectives, and the four American Economic Journal titles). This database also contains many non-English full-text journals in economics and finance. Volume and issue browsing is available for all full-text journals.”
 
 \section{Couverture et mots-clés cherchés}
-Notre recherche s’intéresse aux articles couvrant quatre éléments, appelés ici \og{}sujets\fg{} : l’éducation, les inégalités, la liaison entre ces deux éléments, et l’Amérique latine. La liaison représente le lien de cause à effet, la corrélation, ou autres relations liant ces deux éléments. Pour chacun de ces quatre éléments, nous réunissons des synonymes ou des termes pertinents, y compris des variations de suffixes. Voici les termes retenus.
+Notre recherche s’intéresse aux articles couvrant les éléments suivants, appelés ici \og{}sujets\fg{} : l’éducation, les inégalités, la liaison entre ces deux éléments, et l’Amérique latine. La liaison représente le lien de cause à effet, la corrélation, ou autres relations liant ces deux éléments. Pour chacun de ces éléments, nous réunissons des synonymes ou des termes pertinents, y compris des variations de suffixes. Voici les termes retenus.
 
 \begin{description}
-  \item[Éducation] Le mot clé retenu est \emph{education}, qui ne semble pas admettre de synonymes ou variantes pertinents pour notre contexte.
-  \item[Inégalités] Nous avons retenus les mots clés \emph{equality}, \emph{inequality}, \emph{egalitar*} (couvrant egalitarian, egalitarianism, …) et \emph{inegalitar*}. Notons que le moteur de \citet{ebscohost_searching_2024} permet d’après sa documentation d’utiliser \#\#equality pour couvrir \emph{equality} et \emph{inequality}, mais nous avons constaté de nombreux bugs dans cet usage.
-  \item[Liaison] Nous avons adopté les mots clés \emph{caus*}, \emph{influence*}, \emph{relation*} et \emph{correlation*}.
-  \item[Amérique latine] Nous avons utilisé \emph{Latin America*}, qui couvre \emph{Latin America} et \emph{Latin American} (apparaissant par exemple dans \emph{Latin American Journal of Economics}). 
+  \item[Éducation] Le mot clé retenu est \texttt{education*}, pour inclure l’adjectif \emph{educational}.
+  \item[Inégalités] Nous avons retenus les mots clés \texttt{equality}, \texttt{inequality}, \texttt{egalitar*} (couvrant \emph{egalitarian}, \emph{egalitarianism}, …) et \texttt{inegalitar*}. Notons que le moteur de \citet{ebscohost_searching_2024} permet d’après sa documentation d’utiliser \texttt{\#\#equality} pour couvrir \emph{equality} et \emph{inequality}, mais nous avons constaté de nombreux bugs dans cet usage.
+  \item[Liaison] Nous avons adopté les mots clés \texttt{caus*}, \texttt{impact*}, \texttt{increase*}, \texttt{decrease*}, \texttt{raise*}, \texttt{lower*}, \texttt{influence*}, \texttt{relation*} et \texttt{correlation*}.
+  \item[Politique] Nous avons cherché les mots clés \texttt{policy}, \texttt{policies} et \texttt{reform*} pour cibler plus spécifiquement les politiques éducatives.
+  \item[Polique éducative] Nous avons cherché les mots clés \texttt{education* N5 policy}, \texttt{education* N5 policies} et \texttt{education* N5 reform*} pour cibler différemment les politiques éducatives. 
+  \item[Amérique latine] Nous avons utilisé \texttt{Latin America*}, qui couvre \emph{Latin America} et \emph{Latin American} (apparaissant par exemple dans \emph{Latin American Journal of Economics}). 
+  \item[AL5] L’Amérique latine et les cinq pays les plus peuplés. Concernant les pays, nous avons également inclus les gentilés, par exemple avec \texttt{Mexic*} pour inclure \emph{Mexico} et \emph{Mexican}.
+  \item[AL20] L’Amérique latine et tous les pays la composant.
+  \item[RCT] Nous avons utilisé \texttt{randomi*} qui inclut \emph{randomized}, \emph{randomised}, et \texttt{RCT}.
 \end{description}
-De plus, nous avons examiné les concepts de la classification JEL en y cherchant les mots-clés et variantes indiquées ici. Le concept \emph{I24}, \emph{Éducation et inégalités}, correspond à notre intérêt.
+De plus, nous avons examiné les concepts de la classification JEL en y cherchant les mots-clés et variantes indiquées ici. Le concept \texttt{I24}, \emph{Éducation et inégalités}, correspond à notre intérêt.
 Nous avons donc façonné la requête de manière à trouver également les articles appartenant à cette catégorie même si les mots-clés concernant l’éducation et les inégalités ne sont pas trouvés.
 
 Nous avons cherché les mots clés correspondants dans le titre de l’article, les mots-clés associés à l’article, le résumé et la source de l’article. Ce dernier point est dû à la possibilité qu’un article publié dans Latin American Journal of Economics, par exemple, couvre l’Amérique latine sans que ce fait soit mentionné par les auteurs explicitement.
 
-Voici chaque morceau de requête obtenus, en commençant par celle concernant l’éducation:
+Voici des exemples de morceaux de requête obtenus, en commençant par celle concernant l’éducation:
 \begin{equation}
   \label{eq:education}
   \left.\begin{aligned}
-    &\texttt{TI education OR}\\ 
-    &\texttt{SO education OR}\\ 
-    &\texttt{KW education OR}\\ 
-    &\texttt{AB education}.
+    &\texttt{TI education* OR}\\ 
+    &\texttt{SO education* OR}\\ 
+    &\texttt{KW education* OR}\\ 
+    &\texttt{AB education*}.
   \end{aligned}\right.
 \end{equation}
 Les morceaux concernant les autres sujets suivent une logique similaire:
@@ -75,22 +81,36 @@ Les morceaux concernant les autres sujets suivent une logique similaire:
   \end{aligned}\right.
 \end{equation}
 
-Enfin, nous avons ensuite filtré les résultats pour ne conserver que les sources de type \emph{Academic Journal} et \emph{Collective Volume Articles}. Ici encore, une directive permet en principe de les filtrer en rédigeant la requête (\texttt{PT "Journal Article" OR PT "Collective Volume Article"}), ou de conserver uniquement les articles avec revue par les pairs (\texttt{RV 1}) mais nous avons constaté des bugs dans ces deux fonctionnalités et avons privilégié l’usage de l’interface graphique prévue à cet effet.
+Enfin, nous avons ensuite filtré les résultats pour ne conserver que les sources de type \emph{Academic Journal} et parfois \emph{Collective Volume Articles}. Ici encore, une directive permet en principe de les filtrer en rédigeant la requête (\texttt{PT "Journal Article" OR PT "Collective Volume Article"}), ou de conserver uniquement les articles avec revue par les pairs (\texttt{RV 1}) mais nous avons constaté des bugs dans ces deux fonctionnalités et avons privilégié l’usage de l’interface graphique prévue à cet effet.
 
-Cette requête utilisant ces quatre sujets a renvoyé 42 articles. Ce nombre étant relativement faible et constatant l’omission de certains résultats importants trouvés en testant des variantes de cette requête, notablement un article intitulé “Could an increase in education raise income inequality? Evidence for Latin America”, nous avons décidé d’abandonner le sujet \og{}liaison\fg{}.
-
-La requête que nous obtenons finalement est la suivante. Elle est décomposée pour des raisons de présentation mais bien sûr exécutée en une seule requête sur la base de données en remplaçant les références par les morceaux de requêtes entre parenthèses.
+Définissons la sous-requête \emph{ÉducInég} comme suit.
 \begin{equation}
   \label{eq:query}
   \left.\begin{aligned}
-    &\Bigl(\bigl(\eqref{eq:education} \text{ AND } \eqref{eq:equality}\bigr) \text{ OR CC I24}\Bigr)\text{ AND }\eqref{eq:latin}.
+    &\Bigl(\bigl(\eqref{eq:education} \text{ AND } \eqref{eq:equality}\bigr) \text{ OR CC I24}\Bigr)\text{ AND LA English}.
   \end{aligned}\right.
 \end{equation}
 
-Cette requête a renvoyé 156 articles et peut être consultée \href{https://search-ebscohost-com.proxy.bu.dauphine.fr/login.aspx?direct=true&db=eoh&bquery=(((TI+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+SO+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+KW+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+AB+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*))+AND+(TI+education+OR+SO+education+OR+KW+education+OR+AB+education))+OR+CC+I24)+AND+(TI+"Latin+America*"+OR+SO+"Latin+America*"+OR+KW+"Latin+America*"+OR+AB+"Latin+America*")}{ici} (lien passant par le proxy de Dauphine, il faut ensuite restreindre les types de sources).
+Quelques résultats sont donnés ci-dessous
+(liens passant par le proxy de Dauphine, il faut ensuite restreindre les types de sources).
+Chacune est décomposée pour des raisons de présentation mais bien sûr exécutée en une seule requête sur la base de données en remplaçant les références par les morceaux de requêtes entre parenthèses. Par exemple, \emph{ÉducInég ∩ AL} représente la requête résumée  $\Bigl(\bigl(\eqref{eq:education} \text{ AND } \eqref{eq:equality}\bigr) \text{ OR CC I24}\Bigr)\text{ AND LA English AND }\eqref{eq:latin}$, soit : 
+\begin{center}
+\texttt{$\Bigl($(TI education* OR SO education* OR KW education* OR AB education*) AND $\bigl($(TI (equality OR inequality OR egalitar* OR inegalitar*) OR SO (equality OR inequality OR egalitar* OR inegalitar*) OR KW (equality OR inequality OR egalitar* OR inegalitar*) OR AB (equality OR inequality OR egalitar* OR inegalitar*)$\bigr)$ OR CC I24$\Bigr)$ AND (TI "Latin America*" OR SO "Latin America*" OR KW "Latin America*" OR AB "Latin America*")}.
+\end{center}
+Le A en suffixe désigne le nombre d’articles en comptant uniquement les articles de journaux académiques.
 
-Voici les articles retenus:
-\citet{lopez-acevedo_mexico_2004, gonzalez_overcoming_2012, psacharopoulos_poverty_1995, staab_putting_2011, esquivel_dynamics_2011, braunstein_impact_2018, lustig_impact_2016, messina_twenty_2020, contreras_wage_2011, patrinos_note_2009, legovini_can_2005, battiston_could_2014, amarante_decomposing_2016, carlson_education_2002, birdsall_education_1998, birdsall_education_1997, astorquiza_bustos_income_2021, lustig_income_2014, duryea_labor_2000}
+\begin{itemize}
+  \item \href{https://search-ebscohost-com.proxy.bu.dauphine.fr/login.aspx?direct=true&db=eoh&bquery=((((TI+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+SO+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+KW+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+AB+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*))+AND+(TI+education*+OR+SO+education*+OR+KW+education*+OR+AB+education*))+OR+CC+I24)+AND+(TI+(caus*+OR+impact*+OR+increase*+OR+decrease*+OR+raise*+OR+lower*+OR+influence*+OR+relation*+OR+correlation*)+OR+SO+(caus*+OR+impact*+OR+increase*+OR+decrease*+OR+raise*+OR+lower*+OR+influence*+OR+relation*+OR+correlation*)+OR+KW+(caus*+OR+impact*+OR+increase*+OR+decrease*+OR+raise*+OR+lower*+OR+influence*+OR+relation*+OR+correlation*)+OR+AB+(caus*+OR+impact*+OR+increase*+OR+decrease*+OR+raise*+OR+lower*+OR+influence*+OR+relation*+OR+correlation*))+AND+((TI+("Latin+America*"+OR+Brazil*+OR+Mexic*+OR+Columbia*+OR+Argentin*+OR+Peru*+OR+Venezuela*+OR+Chile*+OR+Guatemala*+OR+Ecuador*+OR+Bolivia*+OR+Cuba*+OR+Dominican+OR+Hondura*+OR+Paraguay*+OR+Salvador*+OR+Nicaragua*+OR+Costa+OR+Panama*+OR+Uruguay*+OR+Puerto))+OR+(SO+("Latin+America*"+OR+Brazil*+OR+Mexic*+OR+Columbia*+OR+Argentin*+OR+Peru*+OR+Venezuela*+OR+Chile*+OR+Guatemala*+OR+Ecuador*+OR+Bolivia*+OR+Cuba*+OR+Dominican+OR+Hondura*+OR+Paraguay*+OR+Salvador*+OR+Nicaragua*+OR+Costa+OR+Panama*+OR+Uruguay*+OR+Puerto))+OR+(KW+("Latin+America*"+OR+Brazil*+OR+Mexic*+OR+Columbia*+OR+Argentin*+OR+Peru*+OR+Venezuela*+OR+Chile*+OR+Guatemala*+OR+Ecuador*+OR+Bolivia*+OR+Cuba*+OR+Dominican+OR+Hondura*+OR+Paraguay*+OR+Salvador*+OR+Nicaragua*+OR+Costa+OR+Panama*+OR+Uruguay*+OR+Puerto))+OR+(AB+("Latin+America*"+OR+Brazil*+OR+Mexic*+OR+Columbia*+OR+Argentin*+OR+Peru*+OR+Venezuela*+OR+Chile*+OR+Guatemala*+OR+Ecuador*+OR+Bolivia*+OR+Cuba*+OR+Dominican+OR+Hondura*+OR+Paraguay*+OR+Salvador*+OR+Nicaragua*+OR+Costa+OR+Panama*+OR+Uruguay*+OR+Puerto)))+AND+LA+English+AND+((education*+N5+policy)+OR+(education*+N5+policies)+OR+(education*+N5+reform*)))}{ÉducInég ∩ PolÉdu ∩ Liaison ∩ AL-20} : 64 A
+  \item \href{https://search-ebscohost-com.proxy.bu.dauphine.fr/login.aspx?direct=true&db=eoh&bquery=(((TI+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+SO+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+KW+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+AB+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*))+AND+(TI+education+OR+SO+education+OR+KW+education+OR+AB+education))+OR+CC+I24)+AND+(TI+"Latin+America*"+OR+SO+"Latin+America*"+OR+KW+"Latin+America*"+OR+AB+"Latin+America*")}{Originale} : 156 articles.
+  \item ÉducInég ∩ Pol ∩ Liaison ∩ AL-5 : 103 A
+  \item ÉducInég ∩ Pol ∩ PolÉdu ∩ Liaison ∩ AL-5 : 33 A
+  \item ÉducInég ∩ PolÉdu ∩ Liaison ∩ AL-5 : 47 A
+  \item ÉducInég ∩ Pol ∩ Liaison ∩ AL-20 : 125 A
+  \item ÉducInég ∩ Pol ∩ PolÉdu ∩ Liaison ∩ AL-20 : 43 A
+  \item \href{https://search-ebscohost-com.proxy.bu.dauphine.fr/login.aspx?direct=true&db=eoh&bquery=(((TI+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+SO+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+KW+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+AB+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*))+AND+(TI+education+OR+SO+education+OR+KW+education+OR+AB+education))+OR+CC+I24)+AND+((TI+("Latin+America*"+OR+Brazil*+OR+Mexic*+OR+Columbia*+OR+Argentin*+OR+Peru*+OR+Venezuela*+OR+Chile*+OR+Guatemala*+OR+Ecuador*+OR+Bolivia*+OR+Cuba*+OR+Dominican+OR+Hondura*+OR+Paraguay*+OR+Salvador*+OR+Nicaragua*+OR+Costa+OR+Panama*+OR+Uruguay*+OR+Puerto))+OR+(SO+("Latin+America*"+OR+Brazil*+OR+Mexic*+OR+Columbia*+OR+Argentin*+OR+Peru*+OR+Venezuela*+OR+Chile*+OR+Guatemala*+OR+Ecuador*+OR+Bolivia*+OR+Cuba*+OR+Dominican+OR+Hondura*+OR+Paraguay*+OR+Salvador*+OR+Nicaragua*+OR+Costa+OR+Panama*+OR+Uruguay*+OR+Puerto))+OR+(KW+("Latin+America*"+OR+Brazil*+OR+Mexic*+OR+Columbia*+OR+Argentin*+OR+Peru*+OR+Venezuela*+OR+Chile*+OR+Guatemala*+OR+Ecuador*+OR+Bolivia*+OR+Cuba*+OR+Dominican+OR+Hondura*+OR+Paraguay*+OR+Salvador*+OR+Nicaragua*+OR+Costa+OR+Panama*+OR+Uruguay*+OR+Puerto))+OR+(AB+("Latin+America*"+OR+Brazil*+OR+Mexic*+OR+Columbia*+OR+Argentin*+OR+Peru*+OR+Venezuela*+OR+Chile*+OR+Guatemala*+OR+Ecuador*+OR+Bolivia*+OR+Cuba*+OR+Dominican+OR+Hondura*+OR+Paraguay*+OR+Salvador*+OR+Nicaragua*+OR+Costa+OR+Panama*+OR+Uruguay*+OR+Puerto)))+AND+(TI+(randomi*+OR+RCT)+OR+SO+(randomi*+OR+RCT)+OR+KW+(randomi*+OR+RCT)+OR+AB+(randomi*+OR+RCT))+AND+LA+English}{ÉducInég ∩ AL-20 ∩ RCT} : 3 A
+\end{itemize}
+
+% Voici les articles retenus: \citet{lopez-acevedo_mexico_2004, gonzalez_overcoming_2012, psacharopoulos_poverty_1995, staab_putting_2011, esquivel_dynamics_2011, braunstein_impact_2018, lustig_impact_2016, messina_twenty_2020, contreras_wage_2011, patrinos_note_2009, legovini_can_2005, battiston_could_2014, amarante_decomposing_2016, carlson_education_2002, birdsall_education_1998, birdsall_education_1997, astorquiza_bustos_income_2021, lustig_income_2014, duryea_labor_2000}
 
 \bibliography{zotero, zotlit}
 
