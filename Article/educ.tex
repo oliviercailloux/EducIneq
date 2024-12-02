@@ -2,6 +2,7 @@
 \documentclass[pagesize, twoside=off, bibliography=totoc, DIV=calc, fontsize=12pt, a4paper, french]{scrartcl}
 \input{preamble/packages}
 \input{preamble/redac}
+\usepackage[margin=2.12cm]{geometry}
 
 \title{L’influence de l’éducation et des politiques éducatives sur les inégalités de revenu en Amérique Latine}
 \author{Ouissem Chikh}
@@ -12,9 +13,16 @@
 	pdfsubject={},
 	pdfkeywords={},
 }
-
+% Remplacer (sans appendix)
+% ([^\n ])\n([^\n])
+% par
+% $1\n\n$2
 \begin{document}
 \maketitle
+\thispagestyle{empty}
+\addtocounter{page}{-1}
+\tableofcontents
+\newpage
 
 \section{Introduction}
 \label{sec:motiv}
@@ -26,7 +34,7 @@ Voyons comment ou si l’un a un impact sur l’autre en Amérique latine.
 
 \appendix
 \section{Sources}
-\label{secsearch}
+\label{sec_search}
 Nous avons choisi de nous appuyer sur la base de données de EBSCOhost \emph{EconLIT with Full Text} qui semble présenter un bon compromis entre sa couverture large (nombreuses sources en économie) et sa spécialisation (réduisant les risques de trop nombreux résultats non pertinents). En outre, elle permet une recherche par mots clés avancée.
 Voici comment l’éditeur la décrit \citep{ebscohost_econlit_2024}.
 
@@ -112,8 +120,9 @@ Le A en suffixe désigne le nombre d’articles en comptant uniquement les artic
   \item [\href{https://search-ebscohost-com.proxy.bu.dauphine.fr/login.aspx?direct=true&db=eoh&bquery=(((TI+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+SO+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+KW+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*)+OR+AB+(equality+OR+inequality+OR+egalitar*+OR+inegalitar*))+AND+(TI+education+OR+SO+education+OR+KW+education+OR+AB+education))+OR+CC+I24)+AND+((TI+("Latin+America*"+OR+Brazil*+OR+Mexic*+OR+Columbia*+OR+Argentin*+OR+Peru*+OR+Venezuela*+OR+Chile*+OR+Guatemala*+OR+Ecuador*+OR+Bolivia*+OR+Cuba*+OR+Dominican+OR+Hondura*+OR+Paraguay*+OR+Salvador*+OR+Nicaragua*+OR+Costa+OR+Panama*+OR+Uruguay*+OR+Puerto))+OR+(SO+("Latin+America*"+OR+Brazil*+OR+Mexic*+OR+Columbia*+OR+Argentin*+OR+Peru*+OR+Venezuela*+OR+Chile*+OR+Guatemala*+OR+Ecuador*+OR+Bolivia*+OR+Cuba*+OR+Dominican+OR+Hondura*+OR+Paraguay*+OR+Salvador*+OR+Nicaragua*+OR+Costa+OR+Panama*+OR+Uruguay*+OR+Puerto))+OR+(KW+("Latin+America*"+OR+Brazil*+OR+Mexic*+OR+Columbia*+OR+Argentin*+OR+Peru*+OR+Venezuela*+OR+Chile*+OR+Guatemala*+OR+Ecuador*+OR+Bolivia*+OR+Cuba*+OR+Dominican+OR+Hondura*+OR+Paraguay*+OR+Salvador*+OR+Nicaragua*+OR+Costa+OR+Panama*+OR+Uruguay*+OR+Puerto))+OR+(AB+("Latin+America*"+OR+Brazil*+OR+Mexic*+OR+Columbia*+OR+Argentin*+OR+Peru*+OR+Venezuela*+OR+Chile*+OR+Guatemala*+OR+Ecuador*+OR+Bolivia*+OR+Cuba*+OR+Dominican+OR+Hondura*+OR+Paraguay*+OR+Salvador*+OR+Nicaragua*+OR+Costa+OR+Panama*+OR+Uruguay*+OR+Puerto)))+AND+(TI+(randomi*+OR+RCT)+OR+SO+(randomi*+OR+RCT)+OR+KW+(randomi*+OR+RCT)+OR+AB+(randomi*+OR+RCT))+AND+LA+English}{ÉducInég ∩ AL-20 ∩ RCT}] 3 A
 \end{description}
 
-% Voici les articles retenus: \citet{lopez-acevedo_mexico_2004, gonzalez_overcoming_2012, psacharopoulos_poverty_1995, staab_putting_2011, esquivel_dynamics_2011, braunstein_impact_2018, lustig_impact_2016, messina_twenty_2020, contreras_wage_2011, patrinos_note_2009, legovini_can_2005, battiston_could_2014, amarante_decomposing_2016, carlson_education_2002, birdsall_education_1998, birdsall_education_1997, astorquiza_bustos_income_2021, lustig_income_2014, duryea_labor_2000}
+Voici les articles retenus: \citet{lopez-acevedo_mexico_2004, gonzalez_overcoming_2012, psacharopoulos_poverty_1995, staab_putting_2011, esquivel_dynamics_2011, braunstein_impact_2018, lustig_impact_2016, messina_twenty_2020, contreras_wage_2011, patrinos_note_2009, legovini_can_2005, battiston_could_2014, amarante_decomposing_2016, carlson_education_2002, birdsall_education_1998, birdsall_education_1997, astorquiza_bustos_income_2021, lustig_income_2014, duryea_labor_2000}
 
-\bibliography{zotero, zotlit}
+% \bibliography{zotero, zotlit}
+\bibliography{manual, sel}
 
 \end{document}
