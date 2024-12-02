@@ -1,5 +1,8 @@
 = Litt
 
+== Mise en page
+Google docs : 59 mots / 4 lignes avec marges par défaut, Times New Roman 12
+
 == Résumé
 Égalité & éducation & politiques & liaison & AL-5 : 103
 

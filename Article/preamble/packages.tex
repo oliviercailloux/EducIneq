@@ -189,8 +189,9 @@
 	\usepackage{bm}
 	\nottoggle{LCpres}{
 	%Provides \cref. Unfortunately, cref fails when the language is French and referring to a label whose name contains a colon (https://tex.stackexchange.com/q/83798). Use \cref{sec\string:intro} to work around this. cleveref should go “laster” than hyperref.  Cleveref gets disabled in presentation mode as it do not seem to go well with Beamer, see https://github.com/josephwright/beamer/issues/750.
-		\usepackage[capitalise]{cleveref}
-	}{
+		\usepackage[capitalise, nameinlink]{cleveref}
+    \crefformat{appendix}{l’#2annexe~#1#3}
+    }{
 	}
 	\nottoggle{LCposter}{
 	%Equations get numbers iff they are referenced. Loading order should be “amsmath → hyperref → cleveref → autonum”, according to autonum doc. Use this in preference to the showonlyrefs option from mathtools, see https://tex.stackexchange.com/q/459918 and autonum doc. See https://tex.stackexchange.com/a/285953 for the etex line (maybe not needed any more? TODO). Also, autonum loads the outdated package etextools, which makes it difficult to coexist with csvsimple (https://tex.stackexchange.com/q/213267/). Incompatible with my version of tikzposter (produces “! Improper \prevdepth”). This removes the starred versions, such as equation*. Unfortunately, this prevents using \qedhere in an equation ending a proof, see https://tex.stackexchange.com/q/133358/.
