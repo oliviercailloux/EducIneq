@@ -7,6 +7,7 @@ Article/*.fls
 Article/*.log
 Article/*.synctex.gz
 Article/*.thm
+Article/*.toc
 Article/*.pdf
 
 LitZot/Zotero API key.txt
