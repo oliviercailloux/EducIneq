@@ -2,7 +2,7 @@
 \documentclass[pagesize, twoside=off, bibliography=totoc, DIV=calc, fontsize=12pt, a4paper, french]{scrartcl}
 \input{preamble/packages}
 \input{preamble/redac}
-\usepackage[margin=2.12cm]{geometry}
+\usepackage[top=2.5cm, bottom=2.6cm, left=2.22cm, right=2.22cm]{geometry}
 
 \title{L’influence de l’éducation et des politiques éducatives sur les inégalités de revenu en Amérique Latine}
 \author{Ouissem Chikh}
@@ -14,15 +14,16 @@
 	pdfkeywords={},
 }
 % Remplacer (sans appendix)
-% ([^\n ])\n([^\n])
+% ([^\n])\n([^\n])
 % par
 % $1\n\n$2
 \begin{document}
 \maketitle
-\thispagestyle{empty}
-\addtocounter{page}{-1}
+\pagenumbering{roman}
 \tableofcontents
 \newpage
+\setcounter{page}{1}
+\pagenumbering{arabic}
 
 \section{Introduction}
 \label{sec:motiv}
